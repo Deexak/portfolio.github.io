@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="DEEPAK.S – Creative Fullstack Developer. Transforming abstract ideas into clean, high-performance web experiences." />
+    <title>DEEPAK.S | Creative Fullstack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <!-- ===== LOADER ===== -->
+    <div class="loader" id="loader">
+        <div class="loader__content">
+            <div class="loader__percent" id="loaderPercent">0 %</div>
+            <div class="loader__main">
+                <h1 class="loader__title">DEEPAK.S</h1>
+                <div class="loader__bar-wrapper">
+                    <div class="loader__bar" id="loaderBar"></div>
+                </div>
+                <p class="loader__subtitle">p o r t f o l i o</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <div class="header__logo-wrap">
+                <div class="header__logo-circle"></div>
+                <span class="header__logo-text">DEEPAK.S</span>
+            </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE NAV OVERLAY ===== -->
+    <nav class="nav-overlay" id="navOverlay">
+        <button class="nav-overlay__close" id="navClose" aria-label="Close menu">&#10005;</button>
+        <ul class="nav-overlay__list">
+            <li><a href="#work" class="nav-overlay__link" id="navWork">Work</a></li>
+            <li><a href="#about" class="nav-overlay__link" id="navAbout">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <!-- Background Video -->
+        <video class="hero__video" autoplay loop muted playsinline>
+            <source src="images/video_69abf900625a6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Overlay to ensure text readability -->
+        <div class="hero__overlay"></div>
+
+        <canvas class="hero__canvas" id="heroCanvas"></canvas>
+        <div class="hero__content">
+            <p class="hero__tag">HEY , I AM DEEPAK.S</p>
+            <h1 class="hero__headline">
+                Creative Fullstack Developer. I transform abstract ideas into clean,
+                high-performance web experiences. With a sharp eye for design and a passion for
+                modern stack development, I build digital products that leave a lasting impression..
+            </h1>
+        </div>
+        <div class="hero__scroll">
+            <span>Scroll Down</span>
+            <div class="hero__scroll-icon">
+                <div class="hero__scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+        <div class="about__bg-img"></div>
+        <div class="about__content">
+            <h2 class="about__heading">
+                I DON'T JUST BUILD WEBSITES; I CRAFT DIGITAL EXPERIENCES. MY WORK BLENDS PRECISION
+                CODING WITH CREATIVE DESIGN TO SOLVE COMPLEX PROBLEMS AND ENGAGE USERS EFFECTIVELY.
+            </h2>
+        </div>
+        <div class="about__collage">
+            <div class="about__collage-item about__collage-item--headphones">
+                <img src="images/Dyson_ Headphones.jpg" alt="Person wearing Dyson headphones" />
+            </div>
+            <div class="about__collage-item about__collage-item--fashion">
+                <img src="images/download (2).jpg" alt="Fashion poster" />
+            </div>
+            <div class="about__collage-item about__collage-item--coming-soon">
+                <img src="images/coming_soon_poster.jpg" alt="Coming soon 2026" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES / WORK SECTION ===== -->
+    <section class="services" id="work">
+        <div class="services__glow services__glow--left"></div>
+        <div class="services__glow services__glow--right"></div>
+        <div class="services__inner">
+            <h2 class="services__title">Our Services</h2>
+            <div class="services__grid">
+                <div class="services__item">
+                    <h3 class="services__item-name">GODVIKA TRENDS</h3>
+                    <p class="services__item-desc">
+                        A sophisticated e-commerce web application for women's fashion and lifestyle products.
+                        Godvika Trends blends sleek, responsive design with a user-centric shopping experience,
+                        showcasing modern web development practices and a keen eye for retail aesthetics.
+                    </p>
+                </div>
+                <div class="services__item">
+                    <h3 class="services__item-name">SHREE.NATH</h3>
+                    <p class="services__item-desc">
+                        SHREE NATH is a modern e-commerce platform dedicated to high-end electronics and audio gear.
+                        Built with a focus on sleek UX and robust performance, it serves as a showcase for my work
+                        in developing scalable, visually striking digital retail solutions for the tech industry.
+                    </p>
+                </div>
+                <div class="services__item services__item--wide">
+                    <h3 class="services__item-name services__item-name--link">
+                        <a href="https://shreenath676.wixstudio.com/pureposter" target="_blank"
+                            rel="noopener">Pure__posterstore</a>
+                    </h3>
+                    <p class="services__item-desc">
+                        Designed and developed a sleek, high-conversion landing page for an upcoming premium aesthetic
+                        poster brand.
+                        The project focuses on "Pure" minimalism, utilizing a restricted color palette and bold
+                        typography
+                        to build brand mystery.
+                    </p>
+                </div>
+            </div>
+            <div class="services__scroll-hint">
+                <div class="services__scroll-mouse">
+                    <div class="services__scroll-dot"></div>
+                </div>
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                    <path d="M5 8L0.669872 0.5L9.33013 0.5L5 8Z" fill="currentColor" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills" id="skills">
+        <div class="skills__header">
+            <h2 class="skills__title">MY <span class="skills__highlight">TECH</span><br>COMPANIONS</h2>
+        </div>
+        <div class="skills__canvas-container" id="skillsCanvasContainer"></div>
+    </section>
+
+    <!-- ===== RECENT PROJECTS SECTION ===== -->
+    <section class="projects" id="projects">
+        <div class="projects__inner">
+            <h2 class="projects__title">Recent Projects</h2>
+            <div class="projects__grid">
+
+                <article class="project-card">
+                    <div class="project-card__img-wrap">
+                        <img src="images/coming_soon_poster.jpg" alt="Coming Soon Landing Page project"
+                            class="project-card__img" />
+                    </div>
+                    <h3 class="project-card__name">Coming Soon Landing Page</h3>
+                    <p class="project-card__desc">
+                        The site features an interactive "Coming Soon" countdown and an automated email
+                        subscription system to kickstart the store's launch strategy.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__img-wrap">
+                        <img src="images/download (2).jpg" alt="Godvika Trends project" class="project-card__img" />
+                    </div>
+                    <h3 class="project-card__name">GODVIKA TRENDS</h3>
+                    <p class="project-card__desc">
+                        This project balances elegance with functionality, utilizing a clean, minimalist
+                        layout to let the intricate details of the fashion products stand out and captivate users.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__img-wrap">
+                        <img src="images/download (1).jpg" alt="Smart Email Automation Engine"
+                            class="project-card__img" />
+                    </div>
+                    <h3 class="project-card__name">Smart Email Automation Engine</h3>
+                    <p class="project-card__desc">
+                        It is a smart mailing system that handles customer communication on autopilot. Users
+                        can configure specific "fixed-time" triggers to automate their email workflows.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__img-wrap">
+                        <img src="images/vinyl_record.jpg" alt="SHREE.NATH project" class="project-card__img" />
+                    </div>
+                    <h3 class="project-card__name">SHREE.NATH</h3>
+                    <p class="project-card__desc">
+                        I focused on creating a high-performance user interface that reflects the quality
+                        of the gear it hosts. Scalable, visually striking digital retail solution.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+    <section class="certs" id="certifications">
+        <div class="certs__glow"></div>
+        <div class="certs__inner">
+            <div class="certs__marquee">
+                <!-- Group 1: 6 Unique Cards -->
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-oracle.png" alt="Oracle Fusion AI Agent Studio" class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">Oracle Fusion AI Agent Studio</h3>
+                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=B6C0D1C22A0DF0F36F8B9D12E21E7FBD55C3A4BF"
+                        target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-infosys.png" alt="Infosys Springboard: The Complete Git Guide"
+                            class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">Infosys Springboard: The Complete Git Guide</h3>
+                    <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_01374278200ther/"
+                        target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-google.png" alt="Google Cloud Certified" class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">Google Cloud Certified: Infrastructure Modernization</h3>
+                    <a href="https://www.cloudskillsboost.google/public_profiles/e11e1e30-1aef-4b7b-a48f-badb0c05c4ac/badges/14189498"
+                        target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-mongodb.png" alt="MongoDB Database Admin Path (Self-Managed)"
+                            class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">MongoDB Database Admin Path (Self-Managed)</h3>
+                    <a href="#" target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-gcp-api.png" alt="Google Cloud: Get Started with API Gateway"
+                            class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">Google Cloud: Get Started with API Gateway</h3>
+                    <a href="#" target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-gcp-genai.png"
+                            alt="Google Cloud: Develop GenAI Apps with Gemini and Streamlit" class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">Google Cloud: Develop GenAI Apps with Gemini and Streamlit</h3>
+                    <a href="#" target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+
+                <!-- Group 2: Duplicated for infinite right-to-left scroll effect -->
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-oracle.png" alt="Oracle Fusion AI Agent Studio" class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">Oracle Fusion AI Agent Studio</h3>
+                    <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=B6C0D1C22A0DF0F36F8B9D12E21E7FBD55C3A4BF"
+                        target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-infosys.png" alt="Infosys Springboard: The Complete Git Guide"
+                            class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">Infosys Springboard: The Complete Git Guide</h3>
+                    <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_01374278200ther/"
+                        target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-google.png" alt="Google Cloud Certified" class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">Google Cloud Certified: Infrastructure Modernization</h3>
+                    <a href="https://www.cloudskillsboost.google/public_profiles/e11e1e30-1aef-4b7b-a48f-badb0c05c4ac/badges/14189498"
+                        target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-mongodb.png" alt="MongoDB Database Admin Path (Self-Managed)"
+                            class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">MongoDB Database Admin Path (Self-Managed)</h3>
+                    <a href="#" target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-gcp-api.png" alt="Google Cloud: Get Started with API Gateway"
+                            class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">Google Cloud: Get Started with API Gateway</h3>
+                    <a href="#" target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-card__img-wrap">
+                        <img src="images/cert-gcp-genai.png"
+                            alt="Google Cloud: Develop GenAI Apps with Gemini and Streamlit" class="cert-card__img" />
+                    </div>
+                    <h3 class="cert-card__title">Google Cloud: Develop GenAI Apps with Gemini and Streamlit</h3>
+                    <a href="#" target="_blank" rel="noopener" class="cert-card__btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VISITOR COUNTER ===== -->
+    <div class="visitor-counter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="visitor-counter__icon">
+            <path
+                d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+        </svg>
+        <span class="visitor-counter__number" id="visitorCount">0</span>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="footer__glow"></div>
+        <div class="footer__inner">
+            <a href="mailto:deepaksahu4828@gmail.com" class="footer__email"
+                id="footerEmail">deepaksahu4828@gmail.com</a>
+            <div class="footer__links">
+                <a href="#work" class="footer__link">Work</a>
+                <a href="#about" class="footer__link">About</a>
+                <a href="#" class="footer__link">Privacy policy</a>
+            </div>
+            <div class="footer__socials">
+                <a href="https://www.instagram.com/s.itsdeexak.8o?igsh=ZWw4YWk4NWk4OHd6" target="_blank" rel="noopener"
+                    class="footer__social-link" aria-label="Instagram" id="socialInstagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/deepak-sahu-b192732a0/" target="_blank" rel="noopener"
+                    class="footer__social-link" aria-label="LinkedIn" id="socialLinkedin">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://x.com/SahuDeepak63238" target="_blank" rel="noopener" class="footer__social-link"
+                    aria-label="Twitter / X" id="socialTwitter">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__copy">© 2035 by DEEPAK.S.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
